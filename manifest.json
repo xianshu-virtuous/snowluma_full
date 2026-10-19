@@ -1,0 +1,149 @@
+{
+  "name": "snowluma_full",
+  "display_name": "SnowLuma 全量接口扩展",
+  "version": "0.3.0",
+  "description": "把 SnowLuma 暴露的 OneBot v11 接口（当前 198 个）收进一个插件：一个目录检索 + 一个通用调用入口，外加戳一戳/贴表情/撤回/精华、禁言/踢人/群名片/群名等高频动作；好友与加群审批、删除好友交给 bot 按 QQ 等级与来源判断，拿不准问 OW。文件类参数有白名单和 owner 闸门，聊天回复禁止直发。危险接口默认关闭，避免撑爆上下文。",
+  "author": "Aemeath",
+  "license": "MIT",
+  "categories": [
+    "chat",
+    "tool"
+  ],
+  "tags": [
+    "snowluma",
+    "qq",
+    "onebot",
+    "api",
+    "tool"
+  ],
+  "api_version": {
+    "adapter_api": "1.0.0",
+    "log_api": "1.0.0",
+    "permission_api": "1.0.0"
+  },
+  "dependencies": {
+    "plugins": [],
+    "components": []
+  },
+  "include": [
+    {
+      "component_type": "event_handler",
+      "component_name": "catalog",
+      "dependencies": []
+    },
+    {
+      "component_type": "event_handler",
+      "component_name": "fold",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_help",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_use",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_requests",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_qzone_read",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_group_file_list",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_events",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_user_info",
+      "dependencies": []
+    },
+    {
+      "component_type": "tool",
+      "component_name": "sl_msg_history",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_call",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_qzone_post",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_qzone_interact",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_file_upload",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_poke",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_reaction",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_recall",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_essence",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_ban",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_whole_ban",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_kick",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_card",
+      "dependencies": []
+    },
+    {
+      "component_type": "action",
+      "component_name": "sl_group_name",
+      "dependencies": []
+    }
+  ],
+  "entry_point": "plugin.py",
+  "min_core_version": "1.0.0",
+  "python_dependencies": [],
+  "dependencies_required": false
+}
